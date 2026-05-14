@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ctx = canvas.getContext('2d');
     ctx.scale(dpr, dpr);
-    ctx.fillStyle = '#09090B';
+    ctx.fillStyle = '#000000';
     ctx.fillRect(0, 0, w, h);
 
     // Grid
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Accent block
     ctx.fillStyle = '#DFE104';
     ctx.fillRect(60, 60, 180, 50);
-    ctx.fillStyle = '#09090B';
+    ctx.fillStyle = '#000000';
     ctx.font = 'bold 14px "Space Grotesk", system-ui';
     ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
     ctx.fillText(key.toUpperCase(), 72, 85);
