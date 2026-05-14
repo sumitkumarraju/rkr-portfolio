@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Kumar Raju — Full Stack Engineer</title>
+  <meta name="description" content="Portfolio of Rohit Kumar Raju — Full Stack Engineer building impactful digital experiences with Next.js, React, TypeScript, and modern web technologies." />
+  <meta name="theme-color" content="#09090B" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>⚡</text></svg>" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Noise Texture -->
+  <svg class="noise" aria-hidden="true">
+    <title>Decorative noise</title>
+    <filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" /></filter>
+    <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+  </svg>
+  <div class="dot-grid" aria-hidden="true"></div>
+
+  <!-- ═══════ NAV ═══════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">RK<span>R</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#projects" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Available for Projects
+    </div>
+    <h1 class="hero-title">
+      Rohit<br />Kumar<br /><span class="highlight">Raju</span>
+    </h1>
+    <p class="hero-sub">
+      Full Stack Engineer crafting high-performance web applications with modern technologies. I build digital products that are fast, accessible, and visually striking.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Work ↓</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Next.js <span class="sep">✦</span> React <span class="sep">✦</span> TypeScript <span class="sep">✦</span> Node.js <span class="sep">✦</span> Framer Motion <span class="sep">✦</span> Tailwind CSS <span class="sep">✦</span> MongoDB <span class="sep">✦</span> Docker <span class="sep">✦</span> Full Stack Engineer <span class="sep">✦</span>&nbsp;</span>
+      <span class="marquee-item">Next.js <span class="sep">✦</span> React <span class="sep">✦</span> TypeScript <span class="sep">✦</span> Node.js <span class="sep">✦</span> Framer Motion <span class="sep">✦</span> Tailwind CSS <span class="sep">✦</span> MongoDB <span class="sep">✦</span> Docker <span class="sep">✦</span> Full Stack Engineer <span class="sep">✦</span>&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ═══════ PROJECTS ═══════ -->
+  <section id="projects">
+    <div class="container">
+      <span class="section-label reveal">Selected Work</span>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-desc reveal">A curated selection of personal and professional projects spanning full-stack development, interactive experiences, and developer tools.</p>
+    </div>
+
+    <div class="projects-grid container">
+
+      <!-- Featured: Spiderverse -->
+      <div class="project-card featured reveal">
+        <div class="project-image-wrap" style="overflow:hidden">
+          <video class="project-image" src="assets/spiderverse.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Framer Motion</span>
+            <span class="project-tag">GSAP</span>
+          </div>
+          <h3 class="project-name">Spiderverse Scrollytelling</h3>
+          <p class="project-desc">An interactive scroll-based storytelling experience with parallax animations and dynamic visual effects inspired by the Spider-Man: Into the Spider-Verse film.</p>
+          <div class="project-links">
+            <a href="https://spiderverse-scrollytelling-app-pi.vercel.app" target="_blank" rel="noopener" class="proj-link-live">Live Demo →</a>
+            <a href="https://github.com/sumitkumarraju/spiderverse-scrollytelling-app" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- TechConnect -->
+      <div class="project-card reveal">
+        <div class="project-image-wrap" style="overflow:hidden">
+          <video class="project-image" src="assets/techconnect.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Socket.io</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+          <h3 class="project-name">TechConnect <span class="status-badge building">Building</span></h3>
+          <p class="project-desc">Real-time collaborative IDE for developers. Share code, chat, and build together with live cursors and execution environments.</p>
+          <div class="project-links">
+            <a href="https://tech-connect-lime.vercel.app" target="_blank" rel="noopener" class="proj-link-live">Live Demo →</a>
+            <a href="https://github.com/sumitkumarraju/techCONNECT" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- Sticker Verse -->
+      <div class="project-card reveal">
+        <div class="project-image-wrap" style="overflow:hidden">
+          <video class="project-image" src="assets/stickerverse.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">Three.js</span>
+          </div>
+          <h3 class="project-name">Sticker Verse</h3>
+          <p class="project-desc">A creative sticker marketplace with 3D previews, drag-and-drop placement, and dynamic sticker customization tools.</p>
+          <div class="project-links">
+            <a href="https://sticker-verse.skrdev.me/" target="_blank" rel="noopener" class="proj-link-live">Live Demo →</a>
+            <a href="https://github.com/sumitkumarraju/Sticker-Verse" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- ZORO -->
+      <div class="project-card reveal">
+        <div class="project-image-wrap" style="overflow:hidden">
+          <video class="project-image" src="assets/zoro.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">Framer Motion</span>
+          </div>
+          <h3 class="project-name">ZORO</h3>
+          <p class="project-desc">A modern AI-powered content creation platform designed to streamline the entire content lifecycle — from ideation to publishing.</p>
+          <div class="project-links">
+            <a href="https://zoro.skrdev.me/" target="_blank" rel="noopener" class="proj-link-live">Live Demo →</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- AnatomyWorld3D -->
+      <div class="project-card reveal">
+        <div class="project-image-wrap" style="overflow:hidden">
+          <img class="project-image" src="assets/anatomy.png" alt="AnatomyWorld 3D preview" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Framer Motion</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+          <h3 class="project-name">AnatomyWorld 3D</h3>
+          <p class="project-desc">An immersive 3D medical education platform for MBBS students. Explore 14 procedural organ models with real-time animations, AI-powered clinical insights, and quizzes.</p>
+          <div class="project-links">
+            <a href="https://anatomy-world-3d.vercel.app" target="_blank" rel="noopener" class="proj-link-live">Live Demo →</a>
+            <a href="https://github.com/sumitkumarraju/AnatomyWorld3D" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- PLGRM Checker -->
+      <div class="project-card reveal">
+        <div class="project-image-wrap" style="overflow:hidden">
+          <canvas class="project-image" data-project="plgrm"></canvas>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">Python</span>
+          </div>
+          <h3 class="project-name">PLGRM Checker & Humanizer</h3>
+          <p class="project-desc">Upload your document. We detect plagiarism using AI-powered analysis combined with web search, then humanize your text while preserving the original format.</p>
+          <div class="project-links">
+            <a href="https://plgrm-checker-humanizer.vercel.app/" target="_blank" rel="noopener" class="proj-link-live">Live Demo →</a>
+            <a href="https://github.com/sumitkumarraju/PLGRM-CHECKER-HUMANIZER" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- Accessibility Flow Auditor -->
+      <div class="project-card reveal">
+        <div class="dev-placeholder">
+          <div class="dev-dots"><span></span><span></span><span></span></div>
+          <p>Under Development</p>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Chrome API</span>
+            <span class="project-tag">AI</span>
+          </div>
+          <h3 class="project-name">Accessibility Flow Auditor <span class="status-badge building">Building</span></h3>
+          <p class="project-desc">AI-powered browser extension for real-time accessibility auditing with WCAG compliance checking and automated fix suggestions.</p>
+          <div class="project-links">
+            <a href="https://github.com/sumitkumarraju/accessibility-flow-auditor" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+      <!-- DesignSense Labs -->
+      <div class="project-card reveal">
+        <div class="dev-placeholder">
+          <div class="dev-dots"><span></span><span></span><span></span></div>
+          <p>Under Development</p>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">AI</span>
+            <span class="project-tag">Figma API</span>
+          </div>
+          <h3 class="project-name">DesignSense Labs <span class="status-badge building">Building</span></h3>
+          <p class="project-desc">AI-driven design feedback tool that analyzes UI compositions, color harmony, typography, and layout balance in real time.</p>
+          <div class="project-links">
+            <a href="https://github.com/sumitkumarraju/design-sense" target="_blank" rel="noopener" class="proj-link-gh">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <section id="about" class="contact-section" style="border-top:2px solid var(--border)">
+    <div class="container">
+      <span class="section-label reveal">About</span>
+      <h2 class="section-title reveal">Engineer &<br />Creator</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm <strong>Rohit Kumar Raju</strong>, a Full Stack Engineer passionate about building web applications that merge performance with creative design. I specialize in <strong>Next.js, React, TypeScript</strong>, and the broader JavaScript ecosystem.</p>
+          <p>My work spans interactive storytelling, real-time collaboration tools, and developer productivity applications. I believe great software is both <strong>functional and beautiful</strong> — every interaction should feel intentional and polished.</p>
+          <p>Currently exploring the intersection of <strong>AI and design systems</strong>, building tools that make development more accessible and design more data-driven.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;color:var(--accent);margin-bottom:24px;">Core Proficiencies</h3>
+          <div class="skills-list">
+            <div class="skill-item"><label>Frontend (React / Next.js)<span>95%</span></label><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+            <div class="skill-item"><label>TypeScript / JavaScript<span>92%</span></label><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+            <div class="skill-item"><label>Backend (Node.js / Express)<span>88%</span></label><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><label>UI/UX & Motion Design<span>90%</span></label><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><label>Database (MongoDB / SQL)<span>85%</span></label><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><label>DevOps (Docker / CI-CD)<span>78%</span></label><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <div class="stat-number" data-target="8">0</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-label">Years Coding</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ EXPERIENCE ═══════ -->
+  <section id="experience">
+    <div class="container">
+      <span class="section-label reveal">Experience</span>
+      <h2 class="section-title reveal">Journey</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 — Present</div>
+          <div class="timeline-role">Full Stack Engineer</div>
+          <div class="timeline-company">Independent / Personal Projects</div>
+          <div class="timeline-desc">Building production-quality web applications focused on real-time collaboration, interactive experiences, and developer tooling using Next.js, React, and TypeScript.</div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 — 2024</div>
+          <div class="timeline-role">Frontend Developer</div>
+          <div class="timeline-company">Freelance & Open Source</div>
+          <div class="timeline-desc">Developed responsive web interfaces and contributed to open-source projects. Focused on animation, accessibility, and component architecture.</div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 — 2023</div>
+          <div class="timeline-role">Computer Science Student</div>
+          <div class="timeline-company">University</div>
+          <div class="timeline-desc">Studied algorithms, data structures, and systems design. Built academic projects in Java, Python, and JavaScript while developing a passion for web development.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <span class="section-label reveal">Contact</span>
+      <div class="contact-title-big reveal">
+        Let's Build<br />
+        <a href="mailto:rohitts786@gmail.com">Something Great</a>
+      </div>
+      <p class="section-desc reveal">Always open to interesting projects, collaborations, and conversations about technology. Drop me a line or find me on the platforms below.</p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:rohitts786@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="0"/><path d="M22 7l-10 7L2 7"/></svg>
+          rohitts786@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer>
+    <div class="footer-inner">
+      <span>© 2024 Rohit Kumar Raju</span>
+      <span>Built with Precision</span>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
